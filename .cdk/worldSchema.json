@@ -1,0 +1,20 @@
+[
+  {
+    "name": "$working",
+    "world": {
+      "scenes": [
+        {
+          "containers": [],
+          "controls": [
+            {
+              "controlID": "points",
+              "kind": "button"
+            }
+          ],
+          "sceneID": "default"
+        }
+      ]
+    },
+    "savedAt": 1581478005475
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "coverUrl": null,
+  "createdAt": "2020-02-12T03:28:56.000Z",
+  "deletedAt": null,
+  "description": null,
+  "hasPublishedVersions": false,
+  "id": 443651,
+  "installation": null,
+  "isShared": false,
+  "name": "Daddy-Robot-Blockrain",
+  "ownerId": 80848479,
+  "typeId": 130858,
+  "updatedAt": "2020-02-12T03:28:56.000Z",
+  "versions": [
+    {
+      "changelog": "Initial release",
+      "createdAt": "2020-02-12T03:28:56.000Z",
+      "id": 449618,
+      "installation": null,
+      "state": "draft",
+      "updatedAt": "2020-02-12T03:28:56.000Z",
+      "version": "0.1.0",
+      "versionOrder": 256
+    }
+  ]
+}
