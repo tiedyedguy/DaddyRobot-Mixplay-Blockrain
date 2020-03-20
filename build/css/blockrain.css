@@ -1,0 +1,269 @@
+body {
+  overflow: hidden;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+}
+.blockrain-game-over-holder {
+  background: transparent !important;
+}
+.blockrain-game-over-holder {
+  background: transparent !important;
+}
+.blockrain-start-holder {
+  background: transparent !important;
+}
+.textdiv {
+  position: fixed;
+  cursor: pointer;
+  border: 1px;
+  border-color: white;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.noborder {
+  border-style: none;
+}
+
+.leaderboarddiv {
+  color: white;
+  width: max-content;
+}
+.title {
+  margin-bottom: 5px;
+}
+
+.lbtable {
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  z-index: -1;
+}
+
+.notr {
+  border-width: 0px;
+}
+
+tr {
+  border: solid;
+  border-width: 1px 0;
+}
+
+.board:hover {
+  opacity: 1;
+}
+.board {
+  opacity: 0.05;
+  position: relative;
+  background: linear-gradient(#616161, #474747);
+  border: 1px solid #9f7037;
+  box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.3),
+    inset 0 30px 30px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: "Monospace";
+  letter-spacing: 3px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+
+  border-radius: 3px;
+}
+
+.board:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+  background: #e8cca0;
+  z-index: -1;
+  border-radius: 0.3em;
+  border: #9b6b2f solid 1px;
+  box-shadow: 0 4px 2px 2px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 0 2px rgba(0, 0, 0, 1);
+}
+
+.board:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 0.1em 0.1em 0 0.1em;
+  width: 50px;
+  height: 8px;
+  background: #f1f1f1;
+  bottom: -1px;
+  right: 15px;
+  box-shadow: inset 0 -4px 1px rgba(0, 0, 0, 0.3),
+    -1px -1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.blockrain-game-holder {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+/* Touch Controls */
+.blockrain-touch {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 100%;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 10;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  line-height: 50px;
+  text-align: center;
+}
+.blockrain-touch:active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.blockrain-touch-left {
+  left: -60px;
+  bottom: 10px;
+}
+.blockrain-touch-left::after {
+  content: "<";
+}
+.blockrain-touch-right {
+  right: -60px;
+  bottom: 10px;
+}
+.blockrain-touch-right::after {
+  content: ">";
+}
+
+.blockrain-touch-rotate-left {
+  left: -60px;
+  bottom: 80px;
+}
+.blockrain-touch-rotate-left::after {
+  content: "<o";
+}
+
+.blockrain-touch-rotate-right {
+  right: -60px;
+  bottom: 80px;
+}
+.blockrain-touch-rotate-right::after {
+  content: "o>";
+}
+
+.blockrain-touch-drop {
+  left: 50%;
+  margin-left: -25px;
+  bottom: -60px;
+}
+.blockrain-touch-drop::after {
+  content: ".";
+}
+
+/* Buttons */
+.blockrain-btn {
+  position: relative;
+  display: inline-block;
+  background: none;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-align: center;
+  cursor: default;
+}
+.blockrain-btn::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  border: 2px solid #ffffff;
+  border-top: none;
+  border-right: none;
+  transition: all 0.2s ease;
+}
+.blockrain-btn::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 100%;
+  bottom: 0px;
+  right: 0px;
+  border: 2px solid #ffffff;
+  border-left: none;
+  border-bottom: none;
+  transition: all 0.2s ease;
+}
+
+.blockrain-btn:hover::before {
+  left: 5px;
+  bottom: -8px;
+  right: -8px;
+}
+.blockrain-btn:hover::after {
+  top: 5px;
+  bottom: -8px;
+  right: -8px;
+}
+
+/* Score */
+.blockrain-score-holder {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+.blockrain-score-msg {
+  font-size: 14px;
+  line-height: 100%;
+  margin-bottom: 0.2em;
+}
+.blockrain-score-num {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Menu */
+.blockrain-start-holder,
+.blockrain-game-over-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.blockrain-start,
+.blockrain-game-over {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.blockrain-start-msg,
+.blockrain-game-over-msg {
+  font-size: 18px;
+  margin-bottom: 30px;
+}

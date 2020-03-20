@@ -22,7 +22,7 @@ window.addEventListener("load", function initMixer() {
           rightHook: "#f5821f",
           leftHook: "#42c6f0",
           rightZag: "#4bd838",
-          leftZag: "#fa1e1e"
+          leftZag: "#81dfd9"
         }
       },
       playText: "Let's play BlockRain! USE WASD!",
