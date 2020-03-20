@@ -60,7 +60,7 @@ window.addEventListener("load", function initMixer() {
     //   }
     // });
     console.log("uh");
-  }, 2000);
+  }, 3500);
 });
 
 function setleaderboard(leaders) {
